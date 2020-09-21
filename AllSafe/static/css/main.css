@@ -6,16 +6,21 @@ body{
   background-color: #00181c;
 }
 
-.navbar{
+.header-navbar{
   background-color: black;
   width: 100%;
 }
 
-.nav-link{
+.header-nav-link{
   color: #BEBEBE;
 }
 
-.nav-link:hover {
+.footer-nav-link{
+  margin-left: 20px;
+  color: #181818;
+}
+
+.header-nav-link:hover {
   background: #BEBEBE;
   color: black;
 }
@@ -23,6 +28,8 @@ body{
 #about::after {
   content: "";
   background: url('../images/AllSafe_office.jpg');
+  background-repeat: no-repeat;
+  background-size: inherit;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -96,7 +103,7 @@ body{
     margin: auto;
     width: 75%;
     border-radius: 4px;
-    background: #fff;
+    background-color: rgba(0, 24, 28, 0.7);
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
       transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   cursor: pointer;
@@ -113,4 +120,27 @@ body{
 
 .shadow:hover{
      transform: scale(1.05);
+}
+
+.employee-card{
+  background-color: rgba(0, 24, 28, 0.8);
+  text-align: center;
+}
+
+.designation{
+  font-size: 18px;
+}
+
+.follow-us{
+  height: 25vh;
+  color: #E0E0E0;
+  display: flex;
+  align-items: center;
+}
+
+footer{
+  height: 12vh;
+  background-color: #BEBEBE;
+  display: flex;
+  align-items: center;
 }
